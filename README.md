@@ -1,7 +1,5 @@
 # Alexander Bertermann - Academic Website
 
-Simple economist-style academic website (like Gautam Rao, Stefano DellaVigna, etc.)
-
 ## Upload to GitHub
 
 1. Create new repository: `A-Bertermann.github.io`
