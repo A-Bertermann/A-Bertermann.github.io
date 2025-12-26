@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Bertermann</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            line-height: 1.5;
+            color: #333;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: auto;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+        .paper {
+            margin-bottom: 25px;
+        }
+
+        .paper-title {
+            font-weight: bold;
+        }
+
+        .paper-title a {
+            color: #333;
+        }
+
+        .paper-title a:hover {
+            color: #0066cc;
+        }
+
+        .coauthors {
+            font-style: italic;
+            color: #555;
+        }
+
+        .journal {
+            font-style: italic;
+        }
+
+        .note {
+            color: #c00;
+            font-weight: bold;
+        }
+
+        .links {
+            margin-top: 5px;
+        }
+
+        .links a {
+            margin-right: 12px;
+            font-size: 0.95em;
+        }
+
+        .abstract {
+            margin-top: 8px;
+            padding: 10px 15px;
+            background: #f9f9f9;
+            border-left: 3px solid #ddd;
+            font-size: 0.95em;
+            display: none;
+        }
+
+        .abstract.show {
+            display: block;
+        }
+
+        .cv-link {
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+            }
+            .profile-img {
+                width: 150px;
+            }
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-text">
+            <h1>Alexander Bertermann</h1>
+            <p class="subtitle">Economist</p>
+        </div>
+        <img src="profile.jpg" alt="Alexander Bertermann" class="profile-img">
+    </div>
+
+    <hr>
+
+    <nav>
+        <a href="#bio">Bio</a>
+        <a href="#contact">Contact</a>
+        <a href="#working-papers">Working Papers</a>
+        <a href="#work-in-progress">Work in Progress</a>
+        <a href="#publications">Publications</a>
+    </nav>
+
+    <!-- BIO -->
+    <h2 id="bio">Bio</h2>
+    
+    <p>I am an economist with research interests in demographic economics, development economics, and preference formation. My work uses quasi-experimental methods to study how institutions and economic shocks shape individual outcomes.</p>
+
+    <p>My primary research examines how socialist education in East Germany affected fertility outcomes after reunification. Using German reunification and school entry cutoffs as natural experiments, I show that additional years of socialist education affected completed fertility through the transmission of gender-egalitarian norms.</p>
+
+    <p>I work extensively with German administrative datasets (SOEP, NEPS, German Microcensus) and employ difference-in-differences, regression discontinuity designs, and other quasi-experimental identification strategies.</p>
+
+    <p><a href="pdf/CV.pdf" class="cv-link">Curriculum Vitae</a> (PDF)</p>
+
+    <hr>
+
+    <!-- CONTACT -->
+    <h2 id="contact">Contact</h2>
+
+    <p>
+        <strong>Email:</strong> <a href="mailto:your.email@university.edu">your.email@university.edu</a><br>
+        <strong>Office:</strong> [Your Office]<br>
+        <strong>Institution:</strong> [Your University]
+    </p>
+
+    <hr>
+
+    <!-- WORKING PAPERS -->
+    <h2 id="working-papers">Working Papers</h2>
+
+    <div class="paper">
+        <h3 class="paper-title">
+            <a href="pdf/socialist_education_fertility.pdf">Socialist Education and Fertility: Evidence from German Reunification</a>
+        </h3>
+        <p><span class="note">Job Market Paper</span></p>
+        <div class="links">
+            <a href="pdf/socialist_education_fertility.pdf">PDF</a>
+            <a href="javascript:void(0)" onclick="toggleAbstract('abs1')">Abstract</a>
+        </div>
+        <div class="abstract" id="abs1">
+            This paper examines how socialist education in East Germany affected fertility outcomes after reunification. Using German reunification and school entry cutoffs as natural experiments, I show that additional years of socialist education reduced completed fertility. The mechanism operates through the transmission of gender-egalitarian norms: women exposed to more socialist education hold more egalitarian attitudes and are more likely to participate in the labor market, which in turn affects fertility decisions.
+        </div>
+    </div>
+
+    <div class="paper">
+        <h3 class="paper-title">
+            <a href="#">Aggregate Shocks During Adolescence and the Formation of Patience</a>
+        </h3>
+        <p class="coauthors">(with [Coauthors])</p>
+        <p>Draft coming soon</p>
+        <div class="links">
+            <a href="javascript:void(0)" onclick="toggleAbstract('abs2')">Abstract</a>
+        </div>
+        <div class="abstract" id="abs2">
+            How do economic shocks during childhood and adolescence affect the formation of time preferences? Using cross-country data from 76 countries and 80,000 individuals, we examine how exposure to natural disasters, hyperinflation, and sovereign defaults during critical developmental windows affects long-term patience. We find that individuals who experienced major economic disruptions during adolescence exhibit systematically different time preferences in adulthood, with implications for savings behavior and human capital investment.
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- WORK IN PROGRESS -->
+    <h2 id="work-in-progress">Work in Progress</h2>
+
+    <div class="paper">
+        <h3 class="paper-title">Temperature Effects on Children's Economic Preferences in Bangladesh</h3>
+        <p class="coauthors">(with [Coauthors])</p>
+    </div>
+
+    <div class="paper">
+        <h3 class="paper-title">Parental Mental Health and Children's Economic Preferences</h3>
+        <p class="coauthors">(with [Coauthors])</p>
+    </div>
+
+    <div class="paper">
+        <h3 class="paper-title">Preferences as Memory States</h3>
+        <p class="coauthors">(with [Coauthors])</p>
+    </div>
+
+    <div class="paper">
+        <h3 class="paper-title">Labor Market Adjustment to Trade and Technology Shocks in Germany</h3>
+        <p class="coauthors">(with [Coauthors])</p>
+    </div>
+
+    <hr>
+
+    <!-- PUBLICATIONS -->
+    <h2 id="publications">Publications</h2>
+
+    <p><em>Coming soon...</em></p>
+
+    <!--
+    Template for publications:
+    
+    <div class="paper">
+        <h3 class="paper-title">
+            <a href="pdf/paper.pdf">Paper Title</a>
+        </h3>
+        <p class="coauthors">(with Coauthor A and Coauthor B)</p>
+        <p class="journal">American Economic Review, March 2025</p>
+        <div class="links">
+            <a href="pdf/paper.pdf">PDF</a>
+            <a href="pdf/appendix.pdf">Online Appendix</a>
+            <a href="javascript:void(0)" onclick="toggleAbstract('abs_pub1')">Abstract</a>
+        </div>
+        <div class="abstract" id="abs_pub1">
+            Abstract text here.
+        </div>
+    </div>
+    -->
+
+    <hr>
+
+    <p style="color: #999; font-size: 0.9em; margin-top: 40px;">
+        Website template based on <a href="https://github.com/gautamrao/gautamrao.github.io">Gautam Rao's design</a>.
+    </p>
+
+    <script>
+        function toggleAbstract(id) {
+            var el = document.getElementById(id);
+            el.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
