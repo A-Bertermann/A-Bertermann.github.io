@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Bertermann</title>
+    <title>Alexander Bertermann | Economist</title>
     <style>
         body {
             font-family: Georgia, 'Times New Roman', serif;
@@ -115,7 +115,7 @@
             margin-top: 5px;
         }
 
-        .links a {
+        .links a, .links button {
             margin-right: 12px;
             font-size: 0.95em;
         }
@@ -133,8 +133,28 @@
             display: block;
         }
 
+        .toggle-abstract {
+            background: none;
+            border: none;
+            color: #0066cc;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-family: Georgia, 'Times New Roman', serif;
+            padding: 0;
+        }
+
+        .toggle-abstract:hover {
+            text-decoration: underline;
+        }
+
         .cv-link {
             font-weight: bold;
+        }
+
+        .fields {
+            color: #555;
+            font-size: 0.95em;
+            margin-top: 5px;
         }
 
         @media (max-width: 600px) {
@@ -155,7 +175,8 @@
     <div class="header">
         <div class="header-text">
             <h1>Alexander Bertermann</h1>
-            <p class="subtitle">Economist</p>
+            <p class="subtitle">Junior Economist and Ph.D. Candidate<br>ifo Institute & LMU Munich</p>
+            <p class="fields">Primary Fields: Economics of Education, Behavioral Economics, Family Economics & Health Economics</p>
         </div>
         <img src="profile.jpg" alt="Alexander Bertermann" class="profile-img">
     </div>
@@ -167,19 +188,18 @@
         <a href="#contact">Contact</a>
         <a href="#working-papers">Working Papers</a>
         <a href="#work-in-progress">Work in Progress</a>
-        <a href="#publications">Publications</a>
     </nav>
 
     <!-- BIO -->
     <h2 id="bio">Bio</h2>
     
-    <p>I am an economist with research interests in demographic economics, development economics, and preference formation. My work uses quasi-experimental methods to study how institutions and economic shocks shape individual outcomes.</p>
+    <p>I am a Junior Economist and Ph.D. Candidate at the <a href="https://www.ifo.de/en/research/ifo-center-economics-education">ifo Center for the Economics of Education</a>, supervised by <a href="https://www.ifo.de/woessmann-l">Ludger Woessmann</a>.</p>
 
-    <p>My primary research examines how socialist education in East Germany affected fertility outcomes after reunification. Using German reunification and school entry cutoffs as natural experiments, I show that additional years of socialist education affected completed fertility through the transmission of gender-egalitarian norms.</p>
+    <p>My research focuses on the economics of education, behavioral economics, family economics, and health economics. I study how educational institutions shape preferences and long-term outcomes, how labor markets adjust to economic shocks, and how parental characteristics influence children's development.</p>
 
-    <p>I work extensively with German administrative datasets (SOEP, NEPS, German Microcensus) and employ difference-in-differences, regression discontinuity designs, and other quasi-experimental identification strategies.</p>
+    <p>I hold a Master's degree in Economics from Heinrich-Heine University Düsseldorf, where I received the prize for best master's thesis from IHK Düsseldorf.</p>
 
-    <p><a href="pdf/CV.pdf" class="cv-link">Curriculum Vitae</a> (PDF)</p>
+    <p><a href="pdf/CV.pdf" class="cv-link">Curriculum Vitae</a> (PDF, Updated December 2025)</p>
 
     <hr>
 
@@ -187,9 +207,8 @@
     <h2 id="contact">Contact</h2>
 
     <p>
-        <strong>Email:</strong> <a href="mailto:your.email@university.edu">your.email@university.edu</a><br>
-        <strong>Office:</strong> [Your Office]<br>
-        <strong>Institution:</strong> [Your University]
+        <strong>Email:</strong> <a href="mailto:bertermann@ifo.de">bertermann@ifo.de</a><br>
+        <strong>Address:</strong> ifo Institute, Poschingerstr. 5, 81679 Munich, Germany
     </p>
 
     <hr>
@@ -199,29 +218,46 @@
 
     <div class="paper">
         <h3 class="paper-title">
-            <a href="pdf/socialist_education_fertility.pdf">Socialist Education and Fertility: Evidence from German Reunification</a>
+            <a href="#">Parental Mental Health and the Economic Preferences of the Next Generation</a>
         </h3>
-        <p><span class="note">Job Market Paper</span></p>
+        <p class="coauthors">(with Hannah Schildberg-Hörisch)</p>
+        <p><span class="note">Revise and Resubmit, Journal of Development Economics</span></p>
         <div class="links">
-            <a href="pdf/socialist_education_fertility.pdf">PDF</a>
-            <a href="javascript:void(0)" onclick="toggleAbstract('abs1')">Abstract</a>
+            <span>Available upon request</span>
+            <button class="toggle-abstract" onclick="toggleAbstract('abs1')">Abstract</button>
         </div>
         <div class="abstract" id="abs1">
-            This paper examines how socialist education in East Germany affected fertility outcomes after reunification. Using German reunification and school entry cutoffs as natural experiments, I show that additional years of socialist education reduced completed fertility. The mechanism operates through the transmission of gender-egalitarian norms: women exposed to more socialist education hold more egalitarian attitudes and are more likely to participate in the labor market, which in turn affects fertility decisions.
+            This paper provides the first evidence that children's economic preferences vary systematically with parental mental health. Using experimentally elicited measures of economic preferences from more than 4,500 children in Bangladesh, we document that children with parents who are affected by mental illness are less prosocial but more patient than their peers with mentally healthy parents. Attitudes toward risk remain unchanged. We discuss potential pathways through which parental mental health may influence the formation of children's preferences, documenting that children with mentally ill parents assume greater responsibilities within the family, experience less parental involvement, and are exposed to a more adverse home environment.
         </div>
     </div>
 
     <div class="paper">
         <h3 class="paper-title">
-            <a href="#">Aggregate Shocks During Adolescence and the Formation of Patience</a>
+            <a href="https://docs.iza.org/dp18247.pdf">Training or Retiring? How Labor Markets Adjust to Trade and Technology Shocks</a>
         </h3>
-        <p class="coauthors">(with [Coauthors])</p>
-        <p>Draft coming soon</p>
+        <p class="coauthors">(with Wolfgang Dauth, Jens Südekum, and Ludger Woessmann)</p>
+        <p><span class="journal">IZA Discussion Paper No. 18247</span> | Submitted</p>
         <div class="links">
-            <a href="javascript:void(0)" onclick="toggleAbstract('abs2')">Abstract</a>
+            <a href="https://docs.iza.org/dp18247.pdf">PDF</a>
+            <button class="toggle-abstract" onclick="toggleAbstract('abs2')">Abstract</button>
         </div>
         <div class="abstract" id="abs2">
-            How do economic shocks during childhood and adolescence affect the formation of time preferences? Using cross-country data from 76 countries and 80,000 individuals, we examine how exposure to natural disasters, hyperinflation, and sovereign defaults during critical developmental windows affects long-term patience. We find that individuals who experienced major economic disruptions during adolescence exhibit systematically different time preferences in adulthood, with implications for savings behavior and human capital investment.
+            How do firms and workers adjust to trade and technology shocks? We analyze two mechanisms that have received little attention: training that upgrades skills and early retirement that shifts adjustment costs to public pension systems. We combine novel data on training participation and early retirement in German local labor markets with established measures of exposure to trade competition and robot adoption. Results indicate that negative trade shocks reduce training — particularly in manufacturing — while robot exposure increases training — particularly in indirectly affected services. Both shocks raise early retirement among manufacturing workers. Structural change thus induces both productivity-enhancing and productivity-reducing responses, challenging simple narratives of labor market adaptation and highlighting the scope for policy to promote adjustment mechanisms conducive to aggregate productivity.
+        </div>
+    </div>
+
+    <div class="paper">
+        <h3 class="paper-title">
+            <a href="https://docs.iza.org/dp16454.pdf">More Education Does Make You Happier—Unless You Are Unemployed</a>
+        </h3>
+        <p class="coauthors">(with Daniel Kamhöfer and Hannah Schildberg-Hörisch)</p>
+        <p><span class="journal">IZA Discussion Paper No. 16454</span></p>
+        <div class="links">
+            <a href="https://docs.iza.org/dp16454.pdf">PDF</a>
+            <button class="toggle-abstract" onclick="toggleAbstract('abs3')">Abstract</button>
+        </div>
+        <div class="abstract" id="abs3">
+            This paper investigates the causal effect of education on life satisfaction, exploring effect heterogeneity along employment status. We use exogenous variation in compulsory schooling requirements and the build-up of new, academically more demanding schools, shifting educational attainment along the entire distribution of schooling. Leveraging plant closures and longitudinal information, we also address the endogeneity of employment status. We find a positive effect of education on life satisfaction for employed individuals, but a negative one for those without a job. We propose an aspiration-augmented utility function as a unifying explanation for the asymmetric effect of education on life satisfaction.
         </div>
     </div>
 
@@ -231,57 +267,39 @@
     <h2 id="work-in-progress">Work in Progress</h2>
 
     <div class="paper">
-        <h3 class="paper-title">Temperature Effects on Children's Economic Preferences in Bangladesh</h3>
-        <p class="coauthors">(with [Coauthors])</p>
-    </div>
-
-    <div class="paper">
-        <h3 class="paper-title">Parental Mental Health and Children's Economic Preferences</h3>
-        <p class="coauthors">(with [Coauthors])</p>
-    </div>
-
-    <div class="paper">
-        <h3 class="paper-title">Preferences as Memory States</h3>
-        <p class="coauthors">(with [Coauthors])</p>
-    </div>
-
-    <div class="paper">
-        <h3 class="paper-title">Labor Market Adjustment to Trade and Technology Shocks in Germany</h3>
-        <p class="coauthors">(with [Coauthors])</p>
-    </div>
-
-    <hr>
-
-    <!-- PUBLICATIONS -->
-    <h2 id="publications">Publications</h2>
-
-    <p><em>Coming soon...</em></p>
-
-    <!--
-    Template for publications:
-    
-    <div class="paper">
-        <h3 class="paper-title">
-            <a href="pdf/paper.pdf">Paper Title</a>
-        </h3>
-        <p class="coauthors">(with Coauthor A and Coauthor B)</p>
-        <p class="journal">American Economic Review, March 2025</p>
+        <h3 class="paper-title">When Schools Shape Demography: Socialist Schooling, Gender Norms and the Fertility Decline in East Germany</h3>
+        <p><span class="note">Job Market Paper</span></p>
         <div class="links">
-            <a href="pdf/paper.pdf">PDF</a>
-            <a href="pdf/appendix.pdf">Online Appendix</a>
-            <a href="javascript:void(0)" onclick="toggleAbstract('abs_pub1')">Abstract</a>
+            <button class="toggle-abstract" onclick="toggleAbstract('abs4')">Abstract</button>
         </div>
-        <div class="abstract" id="abs_pub1">
-            Abstract text here.
+        <div class="abstract" id="abs4">
+            Progressive gender norms that conflict with traditional institutions are increasingly hypothesized as a key driver of declining fertility rates. This paper examines the long-run demographic effects of socialist schooling in the former German Democratic Republic, where advancing gender equality was a core educational objective. Leveraging school entry cutoffs in a difference-in-differences framework, I compare adjacent cohorts exposed to different durations of socialist instruction before reunification abruptly replaced it with more gender-traditional content amid rapid institutional transformation. I find that an additional year of exposure significantly reduces both actual fertility and desired family size. Consistent with a norm transmission mechanism, treated individuals express more egalitarian gender attitudes, and treated women exhibit higher labor force participation. Fertility effects are weaker in regions where childcare remained more accessible after reunification, suggesting that supportive institutions can buffer the influence of gender egalitarian norms on fertility choices.
         </div>
     </div>
-    -->
+
+    <div class="paper">
+        <h3 class="paper-title">The Formation of Economic Preferences</h3>
+        <p class="coauthors">(with Laura Breitkopf, Shyamal Chowdhury, Hannah Schildberg-Hörisch, and Matthias Sutter)</p>
+        <div class="links">
+            <button class="toggle-abstract" onclick="toggleAbstract('abs5')">Abstract</button>
+        </div>
+        <div class="abstract" id="abs5">
+            We use unique panel data on economic preferences of children and adolescents from 3,800 households in rural Bangladesh to comprehensively study preference formation before onset of adulthood. Previous evidence on the formation of children's preferences is mainly based on cross-sectional data which makes it difficult to study dynamic, within-individual development over time. With our panel, we provide comprehensive empirical evidence on the sources of heterogeneity in dynamic preference trajectories, building on the Cunha and Heckman-model of skill formation. We provide first evidence on self-productivity and cross-fertilization of preferences, and study the role of family members and of parental investments and exogenous shocks.
+        </div>
+    </div>
+
+    <div class="paper">
+        <h3 class="paper-title">The Adolescent Origins of Patience: Evidence from Formative Events</h3>
+        <div class="links">
+            <button class="toggle-abstract" onclick="toggleAbstract('abs6')">Abstract</button>
+        </div>
+        <div class="abstract" id="abs6">
+            This paper identifies adolescence as a formative period in the development of time preferences. Using data from 80,000 individuals in 76 countries, I exploit within-country, cross-cohort variation in exposure to natural and man-made disasters. Instability experienced between ages 13 and 17 persistently lowers adult patience, while instability shocks before or after this window have minimal effects. Evidence from German panel and migrant data indicate that shocks operate through psychological rather than material channels, reducing perceived future stability. The findings highlight adolescence as a critical window for shaping time preferences and suggest high returns to stability during this stage of development.
+        </div>
+    </div>
 
     <hr>
 
-    <p style="color: #999; font-size: 0.9em; margin-top: 40px;">
-        Website template based on <a href="https://github.com/gautamrao/gautamrao.github.io">Gautam Rao's design</a>.
-    </p>
 
     <script>
         function toggleAbstract(id) {
